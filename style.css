@@ -1,0 +1,162 @@
+/* ===============================================================
+## charity: water Brand Colors & Fonts
+Primary Colors:
+- Yellow:     #FFC907
+- Blue:       #2E9DF7
+Secondary Colors:
+- Light Blue: #8BD1CB
+- Green:      #4FCB53
+- Orange:     #FF902A
+- Red:        #F5402C
+- Dark Green: #159A48
+- Pink:       #F16061
+Fonts:
+- Proxima Nova
+- Avenir
+================================================================= */
+
+body {
+  margin: 0;
+  font-family: 'Proxima Nova', 'Avenir', sans-serif;
+  background-color: white;
+  color: #555;
+}
+
+header {
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #FFC907;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #159A48;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.donation-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.donation-form input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 2px solid #159A48;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.cta-btn {
+  background-color: #159A48;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #11763a;
+}
+
+.hero-text small {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #11763a;
+}
+
+.image-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.img-bubble {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+  background-color: #2E9DF7;
+  border: 3px solid #159A48;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.img-bubble img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.img-bubble:hover img {
+  transform: scale(1.1);
+}
+
+.img-bubble:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.cta-bubble-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.fundraiser-inline-btn {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 999px;
+  border: none;
+  background: #159A48;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  outline: none;
+  box-shadow: none;
+  white-space: nowrap;
+}
+
+.fundraiser-inline-btn:hover {
+  transform: scale(1.05);
+  background-color: #11763a;
+}
